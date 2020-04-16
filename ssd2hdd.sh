@@ -8,7 +8,7 @@ fi
 
 HDD_PATH_PREFIX="/media/hdd" # Set to your HDD mount point
 
-real_path=$(realpath $1)
+real_path="$(realpath $1)"
 hdd_path="${HDD_PATH_PREFIX}${real_path}"
 
 mkdir -p ${hdd_path}
